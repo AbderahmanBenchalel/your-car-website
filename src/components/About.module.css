@@ -1,0 +1,16 @@
+.about {
+  padding: 10rem 8rem;
+  padding-bottom: 0;
+}
+
+.content {
+  display: flex;
+  gap: 3.4rem;
+  font-family: "Nunito Sans";
+  font-size: 2rem;
+  color: #232730;
+}
+
+.content img {
+  translate: 0 -130px;
+}

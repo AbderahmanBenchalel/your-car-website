@@ -1,0 +1,99 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  width: 37.5rem;
+  height: calc(100vh - 9.2em);
+  padding: 2.2rem;
+  padding-bottom: 4rem;
+  background-color: rgba(18, 39, 61, 0.8);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 9.2rem;
+  right: 0;
+  z-index: 1;
+  overflow: scroll;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.cart ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  margin-bottom: auto;
+}
+
+.cart.close {
+  translate: 100%;
+}
+
+.cart.open {
+  translate: 0;
+}
+
+.product {
+  display: flex;
+  width: auto;
+  background-color: #ffffff;
+  padding: 1.6rem 2.6rem;
+  list-style: none;
+}
+
+.product .content {
+  flex: 1;
+  width: 16.5rem;
+}
+.product h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.product p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.product picture {
+  display: inline-flex;
+  align-items: center;
+  flex: 1;
+}
+.product img {
+  width: 100%;
+  translate: 10px;
+}
+
+.btnDelete {
+  display: inline-flex;
+  border: none;
+  background-color: transparent;
+  translate: 0 5px;
+  width: 1.8rem;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.btnDelete path {
+  fill: #2c2a2a;
+}
+
+.btnDeleteAll {
+  display: inline-flex;
+  justify-content: center;
+  align-items: end;
+  gap: 1rem;
+  width: 19rem;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  font-family: inherit;
+  color: #ffffff;
+  padding: 0.8rem 0;
+  cursor: pointer;
+}
+
+.btnDeleteAll svg {
+  width: 1.6rem;
+}

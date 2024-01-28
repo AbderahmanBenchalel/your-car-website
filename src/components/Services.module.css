@@ -1,0 +1,18 @@
+.services {
+  padding: 10rem 12.8rem;
+  background-image: linear-gradient(
+      rgba(223, 223, 223, 0.5),
+      rgba(223, 223, 223, 0.5)
+    ),
+    url("../assets/imgs/backgrounds/services-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+}

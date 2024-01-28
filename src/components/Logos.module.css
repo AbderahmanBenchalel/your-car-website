@@ -1,0 +1,12 @@
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8rem;
+  padding: 12rem 9rem;
+}
+
+.logos img {
+  max-width: 8rem;
+}

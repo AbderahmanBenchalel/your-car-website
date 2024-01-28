@@ -1,0 +1,30 @@
+.counter {
+  font-size: 2rem;
+}
+
+.counter button {
+  width: 3rem;
+  height: 2.7rem;
+  font-size: inherit;
+  background-color: var(--main-color);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+/* top-left | top-right | bottom-right | bottom-left */
+.counter button:first-of-type {
+  border-radius: 4px 0 0 4px;
+}
+
+.counter button:last-of-type {
+  border-radius: 0 4px 4px 0;
+}
+
+.counter span {
+  display: inline-block;
+  width: 2.8rem;
+  text-align: center;
+  font-size: inherit;
+  color: var(--grey-color);
+}

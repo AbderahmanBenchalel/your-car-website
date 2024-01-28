@@ -1,0 +1,16 @@
+.service {
+  color: var(--grey-color);
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+}
+.service img {
+  margin-bottom: 5rem;
+}
+.service h3 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+}
+.service p {
+  font-size: 2rem;
+}

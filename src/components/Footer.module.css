@@ -1,0 +1,139 @@
+.footer {
+  background-color: #ffffff;
+  padding: 7rem 12rem 4rem;
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--grey-color);
+  box-shadow: 4px 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 11.5rem;
+  border-bottom: 1.5px solid var(--main-color);
+  padding-bottom: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.about {
+  flex: 1;
+  max-width: 30rem;
+}
+.about h3 {
+  font-family: "Lora";
+  font-size: 3.2rem;
+  font-weight: normal;
+  color: var(--main-color);
+  margin-bottom: 2.5rem;
+}
+
+.about h3 span {
+  font-weight: bold;
+}
+
+.about p {
+  font-size: 1.6rem;
+  font-weight: lighter;
+}
+
+.newsLetter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--grey-color);
+}
+
+.newsLetter h3 {
+  font-weight: 500;
+  font-size: 2.4rem;
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--main-color);
+}
+
+.newsLetter p {
+  font-size: 1.6rem;
+  font-weight: lighter;
+  text-align: center;
+}
+.newsLetter nav {
+  display: inline-flex;
+  gap: 3rem;
+}
+
+.newsLetter a,
+.newsLetter a:active {
+  color: inherit;
+  display: inline-block;
+}
+
+.newsLetter img {
+  width: 3rem;
+}
+
+.form {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  gap: 1.6rem;
+}
+
+.form input {
+  max-width: 27.6rem;
+  padding: 1.2rem 2.3rem;
+  font-size: 1.6rem;
+  border: 0.5px solid var(--main-color);
+  outline: none;
+}
+
+.form button {
+  width: 13.6rem;
+  padding: 1.6rem 2.3rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+
+.contact {
+}
+.contact h3 {
+  font-weight: 500;
+  font-size: 2.4rem;
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--main-color);
+  text-align: center;
+  margin-bottom: 3.6rem;
+}
+
+.contact p {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: lighter;
+  font-style: normal;
+  margin-bottom: 2rem;
+}
+
+.contact a {
+  font-family: "Nunito Sans";
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: var(--grey-color);
+  text-decoration: none;
+  font-style: normal;
+  font-size: 1.6rem;
+  font-weight: lighter;
+}
+
+.contact span a {
+  font-weight: normal;
+}
+
+.copyright {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  text-align: center;
+}

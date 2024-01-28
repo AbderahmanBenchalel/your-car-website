@@ -1,0 +1,17 @@
+.title {
+  font-family: "Lora";
+  font-size: 5.6rem;
+  font-weight: bold;
+  margin-bottom: 7rem;
+}
+.title::first-letter {
+  text-transform: uppercase;
+}
+
+.bgTitle {
+  font-family: "Lora";
+  font-size: 12.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: -61px;
+}

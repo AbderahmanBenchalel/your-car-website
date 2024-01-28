@@ -1,0 +1,38 @@
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.6rem;
+
+  background-color: #ffffff;
+  max-width: 84.6rem;
+  padding: 5.2rem 13rem;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 5.4rem;
+}
+
+.testimonial blockquote {
+  font-family: "Lato";
+  font-style: italic;
+  font-size: 2.4rem;
+  text-align: center;
+  line-height: 1.5;
+  color: #272727;
+}
+
+.testimonial p {
+  font-family: "Nunito Snas", sans-serif;
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: var(--grey-color);
+}
+.starts img {
+  margin-right: 1rem;
+}
+.car {
+  max-width: 34.2rem;
+  position: absolute;
+  right: -150px;
+  bottom: -80px;
+}

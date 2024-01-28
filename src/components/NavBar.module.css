@@ -1,0 +1,84 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 2.4rem 9.4rem;
+  padding-top: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.logo {
+  font-size: 4.8rem;
+  line-height: 1;
+  margin-right: auto;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+  margin-right: 3.5rem;
+}
+
+.navigation a {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+  padding: 8px 8px;
+  border-radius: 6px;
+}
+
+.navigation a:hover {
+  background-color: var(--main-color);
+  color: #ffffff;
+}
+
+.cartBtn {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.cartBtn span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 4px;
+  background-color: #f8d7a4;
+  color: #223f5c;
+  font-family: "Nunito Sans";
+  font-size: 1.6rem;
+  font-weight: 500;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+
+/* White style of nav bar */
+
+.navWhite {
+  background-color: #ffffff;
+  color: var(--grey-color);
+  padding-top: 2rem;
+  box-shadow: 5px 4px 4px 0 rgba(0, 0, 0, 0.05);
+}
+/* h-offset v-offset blur spread color */
+
+.navWhite .cartBtn span {
+  background-color: var(--main-color);
+  color: #ffffff;
+}
+
+.navWhite .cartBtn path {
+  fill: var(--main-color);
+}
