@@ -1,5 +1,5 @@
 import styles from "./Testimonial.module.css";
-import starIcon from "../assets/icons/star.svg";
+import { IcStar } from "./icons/Icons";
 import carImg from "../assets/imgs/cars/bmw-7-series.png";
 
 const { testimonial, car, starts } = styles;
@@ -13,11 +13,11 @@ function Testimonial() {
         to anyone looking for a luxury car buying experience.
       </blockquote>
       <div className={starts}>
-        <img src={starIcon} />
-        <img src={starIcon} />
-        <img src={starIcon} />
-        <img src={starIcon} />
-        <img src={starIcon} />
+        <IcStar />
+        <IcStar />
+        <IcStar />
+        <IcStar />
+        <IcStar />
       </div>
 
       <p>Annie Rudy</p>

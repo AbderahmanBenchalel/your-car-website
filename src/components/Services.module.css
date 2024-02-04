@@ -16,3 +16,20 @@
   justify-content: center;
   gap: 8rem;
 }
+
+/* media queries */
+
+/* 1200px (75em)  */
+@media (max-width: 75em) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+/* 560px (35em) */
+
+@media (max-width: 35em) {
+  .services {
+    padding: 5rem 3rem;
+  }
+}

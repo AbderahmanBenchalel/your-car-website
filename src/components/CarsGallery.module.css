@@ -1,12 +1,17 @@
 .carsGallery {
   background-image: url("../assets/imgs/backgrounds/cars-gallery-bg.png");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 1000px;
+
+  width: 100%;
+  padding-top: 28%;
+  padding-bottom: 28%;
   font-family: "Nunito Snas", sans-serif;
   color: #ffffff;
+}
 
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,4 +40,16 @@
   padding: 8px 28px;
   cursor: pointer;
   translate: 45px;
+}
+
+/* 1200px (75em)  */
+@media (max-width: 75em) {
+  .carsGallery {
+    background-image: url("../assets/imgs/backgrounds/cars-gallery-bg.png");
+  }
+}
+
+/* 560px (35em) */
+
+@media (max-width: 35em) {
 }

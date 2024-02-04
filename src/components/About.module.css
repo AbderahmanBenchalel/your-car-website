@@ -14,3 +14,23 @@
 .content img {
   translate: 0 -130px;
 }
+
+/* media queries */
+
+/* 1200px (75em)  */
+@media (max-width: 75em) {
+  .about {
+    padding: 5rem;
+  }
+  .content img {
+    display: none;
+  }
+}
+
+/* 560px (35em) */
+
+@media (max-width: 35em) {
+  .about {
+    padding: 5rem 3rem;
+  }
+}

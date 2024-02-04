@@ -3,3 +3,13 @@
   padding: 8.6rem 8rem;
   padding-top: 4.5rem;
 }
+
+/* media queries */
+
+/* 560px (35em) */
+
+@media (max-width: 35em) {
+  .testimonials {
+    padding: 5rem 3rem;
+  }
+}

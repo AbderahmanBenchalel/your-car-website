@@ -4,7 +4,7 @@
   align-items: center;
   gap: 3rem;
   width: 37.5rem;
-  height: calc(100vh - 9.2em);
+  height: 100vh;
   padding: 2.2rem;
   padding-bottom: 4rem;
   background-color: rgba(18, 39, 61, 0.8);
@@ -96,4 +96,20 @@
 
 .btnDeleteAll svg {
   width: 1.6rem;
+}
+
+/* media queries */
+
+/* 800px (50em) */
+
+@media (max-width: 50em) {
+  .cart {
+    top: 10.1rem;
+  }
+}
+
+@media (max-width: 35em) {
+  .cart {
+    width: 100%;
+  }
 }

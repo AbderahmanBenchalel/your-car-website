@@ -1,14 +1,13 @@
+import styles from "./Cars.module.css";
+
 import SectionTitle from "./SectionTitle";
 import Car from "./Car";
 
-import styles from "./Cars.module.css";
-import chevronRight from "../assets/icons/chevron-right.svg";
-import chevronLeft from "../assets/icons/chevron-left.svg";
-const { cars, carsList, scrollBtn } = styles;
+import { IcChevronRight, IcChevronLeft } from "../components/icons/Icons";
 
 function Cars() {
   return (
-    <section className={cars}>
+    <section className={styles.cars}>
       <SectionTitle
         text="cars"
         color="var(--main-color)"
@@ -16,18 +15,18 @@ function Cars() {
         textAlign="center"
       />
 
-      <button className={scrollBtn}>
-        <img src={chevronLeft} />
+      <button className={styles.slideBtn}>
+        <IcChevronLeft />
       </button>
 
-      <ul className={carsList}>
+      <ul className={styles.carsList}>
         <Car />
-        <Car />
-        <Car />
+        {/* <Car /> */}
+        {/* <Car /> */}
       </ul>
 
-      <button className={scrollBtn}>
-        <img src={chevronRight} />
+      <button className={styles.slideBtn}>
+        <IcChevronRight />
       </button>
     </section>
   );

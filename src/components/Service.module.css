@@ -3,7 +3,7 @@
   font-family: "Nunito Sans", sans-serif;
   text-align: center;
 }
-.service img {
+.service svg {
   margin-bottom: 5rem;
 }
 .service h3 {
@@ -13,4 +13,13 @@
 }
 .service p {
   font-size: 2rem;
+}
+
+/* media queries */
+
+/* 1200px (75em)  */
+@media (max-width: 75em) {
+  .service svg {
+    margin-bottom: 2rem;
+  }
 }

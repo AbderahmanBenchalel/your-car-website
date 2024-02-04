@@ -1,14 +1,12 @@
+import styles from "./Services.module.css";
+
 import SectionTitle from "./SectionTitle";
 import Service from "./Service";
-
-import styles from "./Services.module.css";
-import salesIcon from "../assets/icons/sales.svg";
-import sellingIcon from "../assets/icons/selling.svg";
-const { services, container } = styles;
+import { IcHands, IcGemstone, IcBigStar } from "../components/icons/Icons";
 
 function Services() {
   return (
-    <section className={services}>
+    <section className={styles.services}>
       <SectionTitle
         text="services"
         color="var(--grey-color)"
@@ -16,8 +14,9 @@ function Services() {
         textAlign="center"
       />
 
-      <div className={container}>
-        <Service icon={salesIcon}>
+      <div className={styles.container}>
+        <Service>
+          <IcGemstone />
           <h3>Car sales</h3>
           <p>
             At YourCar, we offer a wide selection of luxury vehicles for sale.
@@ -25,7 +24,8 @@ function Services() {
             SUV, we have the perfect vehicle to fit your needs.
           </p>
         </Service>
-        <Service icon={salesIcon}>
+        <Service>
+          <IcHands />
           <h3>Car rentel</h3>
           <p>
             If you're in need of a luxury car rental, look no further than
@@ -34,7 +34,8 @@ function Services() {
             experience.
           </p>
         </Service>
-        <Service icon={sellingIcon}>
+        <Service>
+          <IcBigStar />
           <h3>Car selling</h3>
           <p>
             At YourCar, we make it easy to sell your car. Simply bring your

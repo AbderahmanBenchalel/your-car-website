@@ -15,3 +15,52 @@
   text-transform: uppercase;
   margin-bottom: -61px;
 }
+
+/* media queries */
+
+/* 1200px (75em)  */
+@media (max-width: 75em) {
+  .title {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .bgTitle {
+    text-align: center;
+  }
+}
+
+/* 1020px (63.75em) */
+@media (max-width: 63.75em) {
+  .title {
+    font-size: 5rem;
+  }
+  .bgTitle {
+    font-size: 10rem;
+    margin-bottom: -51px;
+  }
+}
+
+/* 800px (50em) */
+
+@media (max-width: 50em) {
+  .title {
+    font-size: 4rem;
+  }
+  .bgTitle {
+    font-size: 7rem;
+    margin-bottom: -35px;
+  }
+}
+
+/* 560px (35em) */
+
+@media (max-width: 35em) {
+  .bgTitle {
+    font-size: 4.8rem;
+    margin-bottom: -30px;
+  }
+  .title {
+    font-size: 3.8rem;
+  }
+}

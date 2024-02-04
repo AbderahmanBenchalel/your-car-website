@@ -27,12 +27,70 @@
   font-weight: bold;
   color: var(--grey-color);
 }
-.starts img {
+.starts svg {
   margin-right: 1rem;
 }
 .car {
-  max-width: 34.2rem;
+  width: 34.2rem;
   position: absolute;
   right: -150px;
   bottom: -80px;
+}
+
+/* media queries */
+
+/* 1200px (75em)  */
+@media (max-width: 75em) {
+  .car {
+    width: 30rem;
+    right: -100px;
+  }
+}
+
+/* 940px (58.75) */
+@media (max-width: 58.75em) {
+  .testimonial blockquote {
+    font-size: 2rem;
+  }
+
+  .testimonial p {
+    font-size: 2.8rem;
+  }
+
+  .testimonial svg {
+    width: 2.4rem;
+  }
+
+  .car {
+    width: 20rem;
+    right: -50px;
+    bottom: -50px;
+  }
+}
+
+/* 800px (50em) */
+
+@media (max-width: 50em) {
+  .testimonial {
+    padding: 5.2rem 10rem;
+  }
+}
+
+/* 560px (35em) */
+
+@media (max-width: 35em) {
+  .testimonial {
+    padding: 5.2rem 6rem;
+  }
+  .testimonial p {
+    font-size: 2rem;
+  }
+
+  .testimonial blockquote {
+    font-size: 1.6rem;
+  }
+
+  .car {
+    display: none;
+  }
 }

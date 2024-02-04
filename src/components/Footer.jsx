@@ -1,10 +1,11 @@
-import facebook from "../assets/icons/facebook.svg";
-import instagram from "../assets/icons/instagram.svg";
-import x from "../assets/icons/x.svg";
-
-import location from "../assets/icons/location.svg";
-import phone from "../assets/icons/phone.svg";
-import email from "../assets/icons/email.svg";
+import {
+  IcX,
+  IcFacebook,
+  IcInstagram,
+  IcLocation,
+  IcPhone,
+  IcEmail,
+} from "./icons/Icons";
 
 import styles from "./Footer.module.css";
 
@@ -40,13 +41,13 @@ function Footer() {
 
           <nav>
             <a href="">
-              <img src={facebook} />
+              <IcFacebook />
             </a>
             <a href="">
-              <img src={x} />
+              <IcX />
             </a>
             <a href="">
-              <img src={instagram} />
+              <IcInstagram />
             </a>
           </nav>
         </div>
@@ -55,7 +56,7 @@ function Footer() {
           <h3>Contact</h3>
           <address className={styles.contact}>
             <p>
-              <img src={location} />
+              <IcLocation />
               <span>
                 2038 2nd Avenue,
                 <br /> Las Vegas, United States
@@ -63,7 +64,7 @@ function Footer() {
             </p>
 
             <p>
-              <img src={phone} />
+              <IcPhone />
               <span>
                 <a href="tel:01444773421423">01444773421423</a>
                 <br />
@@ -72,7 +73,7 @@ function Footer() {
             </p>
 
             <p>
-              <img src={email} />
+              <IcEmail />
               <a href="mailto:info@YourCar.com">info@YourCar.com</a>
             </p>
           </address>

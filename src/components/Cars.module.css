@@ -5,10 +5,12 @@
 
 .carsList {
   display: flex;
+  justify-content: center;
   gap: 3rem;
+  list-style: none;
 }
 
-.scrollBtn {
+.slideBtn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,10 +24,37 @@
   top: calc((100% / 2) + 60px);
 }
 
-.scrollBtn:first-of-type {
+.slideBtn:first-of-type {
   left: 50px;
 }
 
-.scrollBtn:last-of-type {
+.slideBtn:last-of-type {
   right: 50px;
+}
+
+/* media queries */
+
+/* 1200px (75em)  */
+@media (max-width: 75em) {
+  .cars {
+    padding: 8rem 10rem;
+  }
+}
+
+/* 1020px (63.75) */
+@media (max-width: 63.75em) {
+  .cars {
+    padding: 5rem 7rem;
+  }
+  .slideBtn {
+    display: none;
+  }
+}
+
+/* 560px (35em) */
+
+@media (max-width: 35em) {
+  .cars {
+    padding: 5rem 3rem;
+  }
 }

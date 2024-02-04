@@ -1,25 +1,26 @@
 import styles from "./NavBar.module.css";
-import { IcCart } from "../components/icons/Icons";
-
-const { navbar, logo, navigation, cartBtn, navWhite } = styles;
+import { IcCart, IcHamburgerMenu } from "../components/icons/Icons";
 
 function NavBar() {
   return (
-    <nav className={`${navbar} ${navWhite}`}>
-      <span className={logo}>
+    <nav className={`${styles.navbar} ${styles.navWhite}`}>
+      <span className={styles.logo}>
         <strong>Your</strong>Car
       </span>
 
-      <span className={navigation}>
+      <span className={`${styles.navigation} ${""}`}>
         <a href="">Home</a>
         <a href="">About</a>
         <a href="">Services</a>
         <a href="">Cars</a>
-        <a href="">Contact us</a>
+        <a href="">Contact</a>
       </span>
-      <button className={cartBtn}>
+      <button className={styles.cartBtn}>
         <span>9</span>
         <IcCart />
+      </button>
+      <button className={styles.menuBtn}>
+        <IcHamburgerMenu />
       </button>
     </nav>
   );

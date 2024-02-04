@@ -10,3 +10,29 @@
 .logos img {
   max-width: 8rem;
 }
+
+/* media queries */
+
+/* 800px (50em) */
+
+@media (max-width: 50em) {
+  .logos {
+    padding: 10rem 5rem;
+  }
+
+  .logos img {
+    max-width: 7rem;
+  }
+}
+
+/* 560px (35em) */
+
+@media (max-width: 35em) {
+  .logos {
+    padding: 5rem 3rem;
+    gap: 5rem;
+  }
+  .logos img {
+    max-width: 5rem;
+  }
+}

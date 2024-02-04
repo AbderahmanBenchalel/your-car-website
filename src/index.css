@@ -33,3 +33,31 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
 }
+
+/* media queries */
+
+/* 1376px (86em) */
+
+@media (max-width: 86em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* 1280px (80em) */
+@media (max-width: 80em) {
+  html {
+    font-size: 57%;
+  }
+}
+
+/* 1200px (75em) */
+@media (max-width: 75em) {
+}
+
+/* 1020px (63.75em) */
+@media (max-width: 63.75em) {
+  html {
+    font-size: 55%;
+  }
+}

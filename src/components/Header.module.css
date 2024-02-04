@@ -27,6 +27,7 @@
   text-align: end;
   max-width: 50%;
   margin-top: 20rem;
+  /* font-weight: bold; */
 }
 
 .description {
@@ -49,4 +50,52 @@
   border-radius: 8px;
   background-color: transparent;
   cursor: pointer;
+}
+
+/* media queries */
+
+/* 1200px (75em)  */
+@media (max-width: 75em) {
+  .header {
+    align-items: center;
+    padding: 0 7rem;
+  }
+
+  .title {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .description {
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 10rem;
+    padding: 1.6rem;
+    background-color: rgba(14, 12, 11, 0.46);
+  }
+}
+
+/* 1020px (63.75) */
+@media (max-width: 63.75em) {
+  .title {
+    font-size: 6rem;
+  }
+}
+
+/* 560px (35em) */
+
+@media (max-width: 35em) {
+  .header {
+    padding: 0 3rem;
+    padding-bottom: 5rem;
+  }
+  .title {
+    font-size: 3.6rem;
+  }
+
+  .description {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: auto;
+  }
 }
