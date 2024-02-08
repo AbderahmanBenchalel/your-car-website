@@ -26,10 +26,12 @@
 
 .cart.close {
   translate: 100%;
+  transition: translate 0.2s linear;
 }
 
 .cart.open {
   translate: 0;
+  transition: translate 0.2s linear;
 }
 
 .product {

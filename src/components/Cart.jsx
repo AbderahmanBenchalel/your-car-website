@@ -4,10 +4,15 @@ import CarAmount from "./CarAmount";
 
 import styles from "./Cart.module.css";
 import carImage from "../assets/imgs/cars/mercedes-benz-m-class.png";
+import { useCartContext } from "../context/CartContext";
 
 function Cart() {
+  const { isCartOpen } = useCartContext();
+
   return (
-    <div className={`${styles.cart} ${styles.close}`}>
+    <div
+      className={`${styles.cart} ${isCartOpen ? styles.open : styles.close}`}
+    >
       <ul>
         <Product />
         <Product />

@@ -1,12 +1,34 @@
 .cars {
-  padding: 10rem 12.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 10rem;
+}
+
+.slider {
+  position: relative;
+  width: fit-content;
+  /* margin: 0 auto; */
   position: relative;
 }
 
-.carsList {
+.container {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  width: 121.5rem; /* the width is 118.5 the 3 more rem are to makesure container is bigger than content*/
+  padding-left: 1.5rem; /* this makes sure the content is in the middle*/
+  height: 60rem;
+  overflow: hidden;
+  /* background-color: blue; */
+}
+
+.carsList {
+  /* background-color: darkgray; */
+  display: flex;
   gap: 3rem;
+  width: fit-content;
+  height: 52rem;
   list-style: none;
 }
 
@@ -21,18 +43,31 @@
   border-radius: 100%;
   cursor: pointer;
   position: absolute;
-  top: calc((100% / 2) + 60px);
+  top: calc((100% / 2) - 3.6rem);
 }
 
 .slideBtn:first-of-type {
-  left: 50px;
+  left: -1rem;
+  translate: -3.6rem;
 }
 
 .slideBtn:last-of-type {
-  right: 50px;
+  right: -1rem;
+  translate: 3.6rem;
+}
+
+.slideBtn:disabled {
+  background-color: grey;
 }
 
 /* media queries */
+
+/* 1312px (82rem) */
+@media (max-width: 82rem) {
+  .container {
+    width: 81rem; /*the width is 78 the 3 more rem are to makesure container is bigger than content*/
+  }
+}
 
 /* 1200px (75em)  */
 @media (max-width: 75em) {
@@ -51,10 +86,20 @@
   }
 }
 
+/* 820px (51.25em) */
+@media (max-width: 51.25em) {
+  .container {
+    width: 40.5rem;
+  }
+}
+
 /* 560px (35em) */
 
 @media (max-width: 35em) {
   .cars {
     padding: 5rem 3rem;
+  }
+  .container {
+    padding-right: 1.5rem;
   }
 }

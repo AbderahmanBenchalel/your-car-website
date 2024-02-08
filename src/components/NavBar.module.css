@@ -39,6 +39,10 @@
   color: #ffffff;
 }
 
+.navigation a.current {
+  background-color: var(--main-color);
+}
+
 .cartBtn {
   display: flex;
   background-color: transparent;
@@ -103,7 +107,7 @@
   }
   .navigation a {
     font-size: 2rem;
-    padding: 4px 4px;
+    padding: 4px 6px;
   }
 }
 
@@ -130,10 +134,14 @@
     right: 0;
     width: 65%;
     height: 100vh;
-    translate: 100%;
   }
   .navigation.open {
     translate: 0;
+    transition: translate 0.2s linear;
+  }
+  .navigation.close {
+    translate: 100%;
+    transition: translate 0.2s linear;
   }
 
   .navigation a {

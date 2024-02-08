@@ -7,15 +7,20 @@ import Testimonials from "./components/Testimonials";
 import Logos from "./components/Logos";
 import Footer from "./components/Footer";
 import Cart from "./components/Cart";
+import { CartProvider } from "./context/CartContext";
 
 function App() {
   return (
     <>
-      <Header />
-      <Cart />
+      <CartProvider>
+        <Header />
+        <Cart />
+      </CartProvider>
       <About />
       <Services />
-      <Cars />
+      <CartProvider>
+        <Cars />
+      </CartProvider>
       <CarsGallery />
       <Testimonials />
       <Logos />

@@ -5,7 +5,7 @@ import styles from "./Header.module.css";
 
 function Header() {
   return (
-    <header className={styles.header}>
+    <header className={styles.header} id="home">
       <NavBar />
 
       <h1 className={styles.title}>Find the perfect car for you at YourCar.</h1>

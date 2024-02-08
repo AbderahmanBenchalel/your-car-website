@@ -6,7 +6,7 @@ import { IcHands, IcGemstone, IcBigStar } from "../components/icons/Icons";
 
 function Services() {
   return (
-    <section className={styles.services}>
+    <section className={styles.services} id="services">
       <SectionTitle
         text="services"
         color="var(--grey-color)"

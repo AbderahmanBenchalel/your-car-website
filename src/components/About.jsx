@@ -5,7 +5,7 @@ import aboutBackground from "../assets/imgs/backgrounds/about-bg.png";
 const { about, content } = styles;
 function About() {
   return (
-    <section className={about}>
+    <section className={about} id="about">
       <SectionTitle
         text="about"
         color="var(--main-color)"
