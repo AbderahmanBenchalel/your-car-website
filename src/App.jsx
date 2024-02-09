@@ -15,10 +15,8 @@ function App() {
       <CartProvider>
         <Header />
         <Cart />
-      </CartProvider>
-      <About />
-      <Services />
-      <CartProvider>
+        <About />
+        <Services />
         <Cars />
       </CartProvider>
       <CarsGallery />

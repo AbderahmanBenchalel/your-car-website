@@ -94,6 +94,13 @@
   color: #ffffff;
   padding: 0.8rem 0;
   cursor: pointer;
+  margin-bottom: 10rem;
+}
+
+.message {
+  font-size: 2.4rem;
+  color: white;
+  margin: auto 0;
 }
 
 .btnDeleteAll svg {

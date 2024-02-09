@@ -3,7 +3,8 @@ import { IcCart, IcHamburgerMenu } from "../components/icons/Icons";
 import { useCartContext } from "../context/CartContext";
 
 function NavBar() {
-  const { isNavOpen, dispatch } = useCartContext();
+  const { isNavOpen, dispatch, cart } = useCartContext();
+  const inCart = cart.reduce((prev, curr) => curr.amount + prev, 0);
 
   return (
     <nav className={`${styles.navbar} ${styles.navWhite}`}>
@@ -27,7 +28,7 @@ function NavBar() {
         className={styles.cartBtn}
         onClick={() => dispatch({ type: "cart/toggle" })}
       >
-        <span>9</span>
+        {inCart > 0 && <span>{inCart}</span>}
         <IcCart />
       </button>
 

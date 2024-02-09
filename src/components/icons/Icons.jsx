@@ -323,9 +323,9 @@ function IcArrowUpRight() {
       <path
         d="M21 7.5L7 21.5M9.33333 7.5H21V19.1667"
         stroke="white"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

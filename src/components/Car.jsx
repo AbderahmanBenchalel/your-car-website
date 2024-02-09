@@ -1,35 +1,36 @@
 import styles from "./Car.module.css";
-
-import carImg from "../assets/imgs/cars/camaro.png";
 import { IcSeat, IcLuggage, IcCart } from "./icons/Icons";
+import getImage from "../utility/getImage";
+import { useCartContext } from "../context/CartContext";
 
-function Car() {
+function Car({ car }) {
+  const { dispatch } = useCartContext();
+
+  function handleAddToCart() {
+    dispatch({ type: "cart/add", payload: car });
+  }
+
   return (
     <li className={styles.car}>
-      <img src={carImg} />
-      <h3>first class</h3>
-      <p className={styles.subTitle}>camaro</p>
-      <p>
-        The Porsche 911 is a true icon in the sports car world, known for its
-        sleek design, impressive performance, and superior handling. It's a
-        two-door, two-seat coupe that's perfect for those who love to feel the
-        wind in their hair and the road beneath their wheels.
-      </p>
+      <img src={getImage(car.image)} />
+      <h3>{car.class}</h3>
+      <p className={styles.subTitle}>{car.name}</p>
+      <p className={styles.description}>{car.description}</p>
 
       <div className={styles.infos}>
         <div>
           <div className={styles.info}>
             <IcSeat />
-            <span>4 Seats</span>
+            <span>{car.seats} Seats</span>
           </div>
 
           <div className={styles.info}>
             <IcLuggage />
-            <span>4 Luggages</span>
+            <span>{car.luggage} Luggages</span>
           </div>
         </div>
 
-        <button className={styles.addToCart}>
+        <button className={styles.addToCart} onClick={handleAddToCart}>
           <span>+ Add to Cart</span>
           <IcCart />
         </button>
