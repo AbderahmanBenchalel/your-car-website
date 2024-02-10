@@ -1,13 +1,29 @@
 import styles from "./Testimonials.module.css";
-const { testimonials } = styles;
 
 import SectionTitle from "./SectionTitle";
 import Testimonial from "./Testimonial";
 import SlidDots from "./SlidDots";
+import { useEffect, useState } from "react";
 
 function Testimonials() {
+  const [testimonials, setTestimonials] = useState([]);
+  const [testimonialIndex, setTestimonialIndex] = useState(0);
+
+  function handleaccessIndexByDot(dotIndex) {
+    setTestimonialIndex(dotIndex);
+  }
+
+  useEffect(() => {
+    async function fetchTestimonials() {
+      const res = await fetch("../data/testimonials.json");
+      const data = await res.json();
+      setTestimonials(data.testimonials);
+    }
+    fetchTestimonials();
+  }, []);
+
   return (
-    <section className={testimonials}>
+    <section className={styles.testimonials}>
       <SectionTitle
         text="testimonials"
         color="#ffffff"
@@ -15,8 +31,15 @@ function Testimonials() {
         textAlign="center"
       />
 
-      <Testimonial />
-      <SlidDots slides={4} selectedColor="#EBD8B8" color="#ffffff" />
+      <Testimonial testimonial={testimonials.at(testimonialIndex)} />
+
+      <SlidDots
+        slides={testimonials.length}
+        selectedColor="#EBD8B8"
+        color="#ffffff"
+        currentSlide={testimonialIndex}
+        stepByDot={handleaccessIndexByDot}
+      />
     </section>
   );
 }

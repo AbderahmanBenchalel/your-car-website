@@ -1,8 +1,12 @@
 import styles from "./NavBar.module.css";
 import { IcCart, IcHamburgerMenu } from "../components/icons/Icons";
 import { useCartContext } from "../context/CartContext";
+import { useState } from "react";
+
+const anchorsList = ["home", "about", "services", "cars", "contact"];
 
 function NavBar() {
+  const [section, setSection] = useState(0);
   const { isNavOpen, dispatch, cart } = useCartContext();
   const inCart = cart.reduce((prev, curr) => curr.amount + prev, 0);
 
@@ -17,11 +21,16 @@ function NavBar() {
           isNavOpen ? styles.open : styles.close
         }`}
       >
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#cars">Cars</a>
-        <a href="#contact">Contact</a>
+        {anchorsList.map((a, i) => (
+          <a
+            href={"#" + a}
+            key={i}
+            className={section === i ? styles.current : ""}
+            onClick={() => setSection(i)}
+          >
+            {a}
+          </a>
+        ))}
       </span>
 
       <button

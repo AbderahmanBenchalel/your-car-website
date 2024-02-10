@@ -2,17 +2,11 @@ import styles from "./Testimonial.module.css";
 import { IcStar } from "./icons/Icons";
 import carImg from "../assets/imgs/cars/bmw-7-series.png";
 
-const { testimonial, car, starts } = styles;
-function Testimonial() {
+function Testimonial({ testimonial }) {
   return (
-    <div className={testimonial}>
-      <blockquote>
-        I recently bought a car through YourCar and I was blown away by their
-        exceptional service. The staff were friendly and knowledgeable, and they
-        helped me find the perfect car for my needs. I highly recommend YourCar
-        to anyone looking for a luxury car buying experience.
-      </blockquote>
-      <div className={starts}>
+    <div className={styles.testimonial}>
+      <blockquote>{testimonial?.description}</blockquote>
+      <div className={styles.starts}>
         <IcStar />
         <IcStar />
         <IcStar />
@@ -20,8 +14,8 @@ function Testimonial() {
         <IcStar />
       </div>
 
-      <p>Annie Rudy</p>
-      <img className={car} src={carImg} />
+      <p>{testimonial?.name}</p>
+      <img className={styles.car} src={carImg} />
     </div>
   );
 }

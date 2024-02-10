@@ -1,4 +1,4 @@
-function SlidDots({ color, selectedColor, slides }) {
+function SlidDots({ color, selectedColor, slides, currentSlide, stepByDot }) {
   const dotStyle = {
     width: "12px",
     height: "12px",
@@ -19,9 +19,10 @@ function SlidDots({ color, selectedColor, slides }) {
         <div
           style={{
             ...dotStyle,
-            backgroundColor: i === 3 ? selectedColor : color,
+            backgroundColor: i === currentSlide ? selectedColor : color,
           }}
           key={i}
+          onClick={() => stepByDot(i)}
         ></div>
       ))}
     </div>
