@@ -88,7 +88,12 @@ function CartProvider({ children }) {
   useEffect(() => {
     async function fetchCars() {
       try {
-        const res = await fetch("../data/cars.json");
+        const res = await fetch("../data/cars.json", {
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+        });
         const data = await res.json();
         dispatch({ type: "carsList/fetch", payload: data.cars });
       } catch (err) {
