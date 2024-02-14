@@ -1,6 +1,6 @@
 import styles from "./Testimonial.module.css";
 import { IcStar } from "./icons/Icons";
-import carImg from "../assets/imgs/cars/bmw-7-series.png";
+import carImg from "/cars/bmw-7-series.png";
 
 function Testimonial({ testimonial }) {
   return (

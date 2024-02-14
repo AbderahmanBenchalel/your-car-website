@@ -88,8 +88,9 @@ function CartProvider({ children }) {
   useEffect(() => {
     async function fetchCars() {
       try {
-        const res = await fetch("../data/cars.json");
+        const res = await fetch("/data/data.json");
         const data = await res.json();
+        console.log(data);
         dispatch({ type: "carsList/fetch", payload: data.cars });
       } catch (err) {
         alert(err);

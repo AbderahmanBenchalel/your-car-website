@@ -15,7 +15,7 @@ function Testimonials() {
 
   useEffect(() => {
     async function fetchTestimonials() {
-      const res = await fetch("../data/testimonials.json");
+      const res = await fetch("/data/data.json");
       const data = await res.json();
       setTestimonials(data.testimonials);
     }
